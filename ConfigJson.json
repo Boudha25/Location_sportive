@@ -1,0 +1,93 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "C:/Users/Utilisateur/Google Drive/Documents de St\u00e9phane/Projet/Python/Location_sportive/Main.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": true
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "icon_file",
+   "value": "C:/Users/Utilisateur/Google Drive/Documents de St\u00e9phane/Projet/Python/Location_sportive/gym.ico"
+  },
+  {
+   "optionDest": "name",
+   "value": "Location Sportive"
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Utilisateur/Google Drive/Documents de St\u00e9phane/Projet/Python/Location_sportive/BaseDonnee.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Utilisateur/Google Drive/Documents de St\u00e9phane/Projet/Python/Location_sportive/GestionEleve.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Utilisateur/Google Drive/Documents de St\u00e9phane/Projet/Python/Location_sportive/GestionEmprunt.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Utilisateur/Google Drive/Documents de St\u00e9phane/Projet/Python/Location_sportive/GestionMateriel.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Utilisateur/Google Drive/Documents de St\u00e9phane/Projet/Python/Location_sportive/sport_background.jpg;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Utilisateur/Google Drive/Documents de St\u00e9phane/Projet/Python/Location_sportive/Utils.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Utilisateur/Google Drive/Documents de St\u00e9phane/Projet/Python/Location_sportive/sport_background.jpg;."
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": ""
+ }
+}

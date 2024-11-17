@@ -1,3 +1,4 @@
+import os
 from tkinter import ttk
 import customtkinter as ctk
 from PIL import Image, ImageTk
@@ -11,14 +12,18 @@ class GestionEmprunts(ctk.CTkFrame):
         self.id_materiels_scannes = []  # Liste des items scannés
         self.pack(padx=20, pady=20)
 
+        # Définir le chemin relatif pour l'image de fond
+        background_path = os.path.join(os.path.dirname(__file__), "sport_background.jpg")
+
         # Créer un Canvas pour l'arrière-plan
         self.canvas = ctk.CTkCanvas(self, width=1200, height=800)
         self.canvas.pack(fill="both", expand=True)
 
         # Charger l'image d'arrière-plan
-        self.image = Image.open("sport_background.jpg").resize((1200, 600), Image.LANCZOS)
-        self.ctk_image = ImageTk.PhotoImage(self.image)
-        self.canvas.create_image(0, 0, anchor="nw", image=self.ctk_image)
+        if os.path.exists(background_path):
+            self.image = Image.open(background_path).resize((920, 550), Image.LANCZOS)
+            self.ctk_image = ImageTk.PhotoImage(self.image)
+            self.canvas.create_image(0, 0, anchor="nw", image=self.ctk_image)
 
         # Widgets pour l'ajout d'un emprunt
         self.label_id_eleve = ctk.CTkLabel(self.canvas, text="Code Élève:")
@@ -42,7 +47,7 @@ class GestionEmprunts(ctk.CTkFrame):
         # Date d'emprunt
         self.label_date_emprunt = ctk.CTkLabel(self.canvas, text="Date d'Emprunt:")
         self.label_date_emprunt.pack(pady=5)
-        self.date_emprunt_entry = ctk.CTkEntry(self.canvas, width=300)
+        self.date_emprunt_entry = ctk.CTkEntry(self.canvas, width=300, justify='center')
         self.date_emprunt_entry.insert(0, self.get_today_date())  # Date du jour par défaut
         self.date_emprunt_entry.pack(pady=5)
 
@@ -64,7 +69,7 @@ class GestionEmprunts(ctk.CTkFrame):
 
         # Configuration du Treeview pour afficher les emprunts
         self.columns = ("Nom", "Prénom", "Numéro d'équipement", "Type", "Côté", "Date d'emprunt", "Date de retour")
-        self.treeview = ttk.Treeview(self.canvas, columns=self.columns, show="headings")
+        self.treeview = ttk.Treeview(self.canvas, columns=self.columns, show="headings", height=20)
 
         for col in self.columns:
             self.treeview.heading(col, text=col.replace("_", " ").capitalize(),
@@ -81,7 +86,6 @@ class GestionEmprunts(ctk.CTkFrame):
     def lister_emprunts(self):
         self.treeview.delete(*self.treeview.get_children())
         emprunts = self.db.lister_emprunts()
-        print("EMPRUNT", emprunts)
 
         for emprunt in emprunts:
             self.treeview.insert("", "end", values=(
