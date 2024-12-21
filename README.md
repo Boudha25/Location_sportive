@@ -48,6 +48,7 @@ Voici un aperçu de l'application de gestion de location sportive :
 2. Naviguez entre les onglets pour gérer les élèves, le matériel et les emprunts.
 3. Ajoutez ou mettez à jour les données via les formulaires fournis.
 4. Visualisez les informations mises à jour dans les tableaux interactifs.
+5. Je suggère d'utiliser un scanneur à code bare et des étiquettes code barre pour les code d'élèves et des équipements. https://www.amazon.ca/hz/wishlist/ls/3JMD4SEDUJQE8?ref_=wl_share
 
 ## Exemple de Structure de la Base de Données
 
