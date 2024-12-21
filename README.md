@@ -3,7 +3,11 @@
 ## Description
 Cette application gère la location de matériel sportif, les élèves et les emprunts. Elle inclut une interface graphique interactive écrite en Python en utilisant `customtkinter` et `ttk`. Les données sont stockées dans une base de données SQLite.
 
-## Fonctionnalités
+## Aperçu Visuel
+
+Voici un aperçu de l'application de gestion de location sportive :
+
+![Aperçu de l'application](screenshot.png)
 
 ### Gestion des Élèves
 - Ajouter, modifier et supprimer des élèves.
