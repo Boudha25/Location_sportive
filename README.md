@@ -7,7 +7,7 @@ Cette application gère la location de matériel sportif, les élèves et les em
 
 Voici un aperçu de l'application de gestion de location sportive :
 
-![Aperçu de l'application](screenshot.png)
+![Aperçu de l'application](screenshot.jpg)
 
 ### Gestion des Élèves
 - Ajouter, modifier et supprimer des élèves.
